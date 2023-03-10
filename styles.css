@@ -8,3 +8,20 @@ body {
     font-weight: normal;
     font-family: 'Roboto', sans-serif;
 }
+
+.logo {
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    /* text-transform: lowercase; */
+    /* letter-spacing: 5px; */
+    /* word-spacing: 42px; */
+}
