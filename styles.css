@@ -130,3 +130,25 @@ a:visited {
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
 }
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    color: #000;
+    font-family: inherit;
+    padding: 15px 0 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
