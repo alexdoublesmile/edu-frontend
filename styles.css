@@ -112,5 +112,10 @@ a:visited {
 }
 
 .table td {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: grey;
 }
