@@ -119,3 +119,14 @@ a:visited {
 .table td:nth-child(3) {
     color: grey;
 }
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
