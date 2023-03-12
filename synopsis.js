@@ -105,6 +105,7 @@ const person = {
 // utils
 let numberString = "42"
 let floatString = "42.42"
+let bigNuber = 543n
 Number.MAX_SAFE_INTEGER
 console.log("-----------------")
 console.log(Number.parseInt(numberString) + 2)
@@ -113,3 +114,10 @@ console.log(+numberString + 2)
 console.log(Number.parseFloat(floatString) + 2)
 console.log(Number.parseFloat(floatString) + .2)
 console.log((Number.parseFloat(floatString) + .2).toFixed(2))
+console.log("-----------------")
+console.log(bigNuber)
+console.log(bigNuber + 12n)
+console.log(Number.parseInt(bigNuber) + 12)
+console.log(Number(bigNuber) + 12)
+console.log(bigNuber + BigInt(12))
+// console.log(bigNuber + 12) // error
