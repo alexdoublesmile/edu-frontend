@@ -57,7 +57,7 @@ for (let num of numArray) {
     console.log(num)
 }
 
-// functions
+// objects and functions
 const person = {
     firstName: "Alex",
     lastName: "Smith",
@@ -75,25 +75,25 @@ const person = {
     }
 }
 
-console.log("-----------------")
-console.log(person)
-console.log(person.lastName)
-console.log(person["lastName"])
-console.log(person.someProperty)
-console.log(person["someProperty"])
-console.log(person.languages)
-console.log(person.isProgrammer)
-person.isProgrammer = false
-console.log(person.isProgrammer)
-console.log(person.hasWife)
-person.hasWife = true
-console.log(person.hasWife)
-console.log("-----------------")
-person.doWork()
-person.doSmth
-person.doSmth = function() {
-    console.log("doing smth...")
-}
-person.doSmth()
-person.printName()
-person.printSmth("something")
+// console.log("-----------------")
+// console.log(person)
+// console.log(person.lastName)
+// console.log(person["lastName"])
+// console.log(person.someProperty)
+// console.log(person["someProperty"])
+// console.log(person.languages)
+// console.log(person.isProgrammer)
+// person.isProgrammer = false
+// console.log(person.isProgrammer)
+// console.log(person.hasWife)
+// person.hasWife = true
+// console.log(person.hasWife)
+// console.log("-----------------")
+// person.doWork()
+// person.doSmth
+// person.doSmth = function() {
+//     console.log("doing smth...")
+// }
+// person.doSmth()
+// person.printName()
+// person.printSmth("something")
