@@ -27,6 +27,7 @@ const numArray = ["one", "two", "three", 7]
 // console.log(typeof undefinedVar)
 // console.log(typeof nullVar)
 // console.log(typeof null)
+// console.log(typeof NaN)
 // console.log(null)
 // console.log(typeof numArray)
 // console.log(typeof numArray.length)
@@ -35,7 +36,7 @@ const numArray = ["one", "two", "three", 7]
 // console.log(numArray.length)
 // console.log(numArray[0])
 
-// operations
+// expressions
 console.log("-----------------")
 const appState = "stoppe"
 if (appState === "enabled") {
@@ -46,7 +47,6 @@ if (appState === "enabled") {
     console.log("App has invalid state")
 }
 
-// cycle
 console.log("-----------------")
 for (let i = 0; i < numArray.length; i++) {
     console.log(numArray[i])
@@ -58,6 +58,10 @@ for (let num of numArray) {
 }
 
 // objects and functions
+function someFun(name, age, arg2, arg3) {
+    // to do
+}
+
 const person = {
     firstName: "Alex",
     lastName: "Smith",
@@ -97,3 +101,15 @@ const person = {
 // person.doSmth()
 // person.printName()
 // person.printSmth("something")
+
+// utils
+let numberString = "42"
+let floatString = "42.42"
+Number.MAX_SAFE_INTEGER
+console.log("-----------------")
+console.log(Number.parseInt(numberString) + 2)
+console.log(Number(numberString) + 2)
+console.log(+numberString + 2)
+console.log(Number.parseFloat(floatString) + 2)
+console.log(Number.parseFloat(floatString) + .2)
+console.log((Number.parseFloat(floatString) + .2).toFixed(2))
