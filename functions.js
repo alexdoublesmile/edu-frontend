@@ -1,3 +1,6 @@
+const age = 18
+const num = 218
+
 // string specific functions
 const str = `Name: ${name} and age: ${age} doing ${getDoing(age)}`
 
@@ -19,7 +22,7 @@ function greet(name) {
 }
 
 // function expression
-const greet = function greet(name) {
+const greet2 = function greet(name) {
     // to do
 }
 
@@ -64,3 +67,4 @@ function createMember(name) {
 
 const logWithLastName = createMember("Alex")
 logWithLastName("Smith")
+logWithLastName("Ivanov")
