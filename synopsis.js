@@ -121,3 +121,18 @@ console.log(Number.parseInt(bigNuber) + 12)
 console.log(Number(bigNuber) + 12)
 console.log(bigNuber + BigInt(12))
 // console.log(bigNuber + 12) // error
+
+// string
+const str = `Name: ${name} and age: ${age} doing ${getDoing(age)}`
+
+function getDoing(num) {
+    return num + num
+}
+
+function printStr(s, arg1, arg2) {
+    console.log(`${s[0]}${arg1}${s[1]}${arg2}${s[2]}`)
+}
+
+console.log(str)
+
+const output = printStr`String with ${num} and with ${age}`
