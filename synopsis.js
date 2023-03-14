@@ -3,9 +3,9 @@ const someFirstName = "Alex"
 const someAge = 36
 let someName = "Alex Plohoy"
 var oldName = "global Alex"
-// console.log("-----------------")
-// console.log("Name: " + someFirstName + " and age: " + someAge)
-// console.log(someAge)
+console.log("-----------------")
+console.log("Name: " + someFirstName + " and age: " + someAge)
+console.log(someAge)
 
 // data types
 const isEnabled = true
@@ -17,24 +17,24 @@ const hexNum = 0x0110f3
 let undefinedVar
 const nullVar = null
 const numArray = ["one", "two", "three", 7]
-// console.log("-----------------")
-// console.log(typeof isEnabled)
-// console.log(typeof name)
-// console.log(typeof age)
-// console.log(typeof num)
-// console.log(typeof binaryNum)
-// console.log(typeof hexNum)
-// console.log(typeof undefinedVar)
-// console.log(typeof nullVar)
-// console.log(typeof null)
-// console.log(typeof NaN)
-// console.log(null)
-// console.log(typeof numArray)
-// console.log(typeof numArray.length)
-// console.log(typeof numArray[0])
-// console.log(numArray)
-// console.log(numArray.length)
-// console.log(numArray[0])
+console.log("-----------------")
+console.log(typeof isEnabled)
+console.log(typeof name)
+console.log(typeof age)
+console.log(typeof num)
+console.log(typeof binaryNum)
+console.log(typeof hexNum)
+console.log(typeof undefinedVar)
+console.log(typeof nullVar)
+console.log(typeof null)
+console.log(typeof NaN)
+console.log(null)
+console.log(typeof numArray)
+console.log(typeof numArray.length)
+console.log(typeof numArray[0])
+console.log(numArray)
+console.log(numArray.length)
+console.log(numArray[0])
 
 // expressions
 console.log("-----------------")
@@ -79,28 +79,28 @@ const person = {
     }
 }
 
-// console.log("-----------------")
-// console.log(person)
-// console.log(person.lastName)
-// console.log(person["lastName"])
-// console.log(person.someProperty)
-// console.log(person["someProperty"])
-// console.log(person.languages)
-// console.log(person.isProgrammer)
-// person.isProgrammer = false
-// console.log(person.isProgrammer)
-// console.log(person.hasWife)
-// person.hasWife = true
-// console.log(person.hasWife)
-// console.log("-----------------")
-// person.doWork()
-// person.doSmth
-// person.doSmth = function() {
-//     console.log("doing smth...")
-// }
-// person.doSmth()
-// person.printName()
-// person.printSmth("something")
+console.log("-----------------")
+console.log(person)
+console.log(person.lastName)
+console.log(person["lastName"])
+console.log(person.someProperty)
+console.log(person["someProperty"])
+console.log(person.languages)
+console.log(person.isProgrammer)
+person.isProgrammer = false
+console.log(person.isProgrammer)
+console.log(person.hasWife)
+person.hasWife = true
+console.log(person.hasWife)
+console.log("-----------------")
+person.doWork()
+person.doSmth
+person.doSmth = function() {
+    console.log("doing smth...")
+}
+person.doSmth()
+person.printName()
+person.printSmth("something")
 
 // utils
 let numberString = "42"
@@ -190,3 +190,64 @@ function createMember(name) {
 const logWithLastName = createMember("Alex")
 logWithLastName("Smith")
 logWithLastName("Ivanov")
+
+// array
+const cars = [
+    {
+        name: "BMW",
+        price: 100000
+    },
+    {
+        name: "Mazda",
+        price: 50000
+    },
+    {
+        name: "Mercedes",
+        price: 150000
+    }
+]
+console.log(cars)
+
+cars.push("Some car")
+console.log(cars)
+cars.pop()
+console.log(cars)
+cars.unshift("Some car") // push analog
+console.log(cars)
+cars.shift() // pop analog
+console.log(cars)
+console.log("--------------")
+
+cars.reverse()
+console.log(cars)
+
+// for (let car of cars) {
+//     console.log(car.name === "BMW")
+// }
+
+const bmwIndex = cars.findIndex(function(car) {
+    return car.name === "BMW"
+})
+
+const bmw = cars.find(function(car) {
+    return car.name === "BMW"
+})
+
+const bmw2 = cars.find(car => car.name !== null)
+
+console.log(bmwIndex)
+console.log(bmw)
+console.log(bmw2)
+
+const hasNullCarName = cars.includes(car => car.name === null)
+console.log(hasNullCarName)
+
+const pow2 = num => num ** 2
+const sum2 = (num1, num2) => num1 + num2
+const carsAllPowedPrice = cars
+    .map(car => car.price)
+    .map(pow2)
+    .filter(price => price > 2500000000)
+    .reduce(sum)
+
+console.log(carsAllPowedPrice)
