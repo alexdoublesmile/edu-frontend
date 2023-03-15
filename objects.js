@@ -91,3 +91,44 @@ logKeysAndValuesBoundedToPerson()
 logger.logKeys.bind(person)
 logger.logKeys.call(person, "1arg")
 logger.logKeys.apply(person, ["1arg"])
+
+// Destructuring
+console.log("-----------------------------------------")
+const array = [1, undefined, 3, 5, 8, 13]
+const [a, b = 42, ...c] = array
+console.log(a, b, c)
+
+const[at,, ct] = array
+console.log(at, ct)
+
+const address = {
+    country: "Russia",
+    city: "Moscow",
+    // street: "Lenina",
+    concat() {
+        return `${this.country}, ${this.city}, ${this.street}`
+    }
+}
+
+const {city, country, street = "Tverskaya", concat: addressConcat} = address
+
+console.log(addressConcat.call(address))
+console.log(street)
+
+const {city2, ...rest} = address
+console.log(city2)
+console.log(rest)
+
+const newAddress = {...address, street: "Tverskaya", code: 123}
+console.log(newAddress)
+console.log(address.concat())
+
+const first = {a: 1}
+const second = {b: 1}
+
+Object.is(a, b)
+Object.assign(a, b)
+Object.assign({}, a, b)
+Object.entries(a)
+Object.keys(b)
+Object.values(c)
