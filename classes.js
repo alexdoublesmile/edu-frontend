@@ -40,3 +40,10 @@ class Programer extends Person {
 const frontend = new Programer("Max", "Frontend")
 console.log(frontend)
 frontend.greet()
+
+console.log(frontend.__proto__ === Programer.prototype)
+
+
+class Simple {
+
+}
