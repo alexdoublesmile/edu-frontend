@@ -56,10 +56,22 @@ const body = {
     age: 26
 }
 
-sendRequest("POST", requestUrl, body)
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
+// sendRequest("POST", requestUrl, body)
+//     .then(data => console.log(data))
+//     .catch(err => console.log(err))
 
-sendFetchRequest("POST", requestUrl, body)
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
+// sendFetchRequest("POST", requestUrl, body)
+//     .then(data => console.log(data))
+//     .catch(err => console.log(err))
+
+
+async function send(method, requestUrl, body) {
+    try {
+        const data = await sendRequest(method, requestUrl, body)
+        console.log(data)
+    } catch (ex) {
+        console.log(ex)
+    }
+}
+
+send("GET", requestUrl)
