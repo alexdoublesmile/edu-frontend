@@ -7,7 +7,13 @@ const person = {
 const op = new Proxy(person, {
     // op.prop
     get(target, prop) {
-        console.log(`Getting prop ${prop}`)
+        // console.log(`Getting prop ${prop}`)
+        if (!(prop in target)) {
+            return prop
+                .split("_")
+                .map(p => target[p])
+                .join(" ")
+        }
         return target[prop]
     },
     // op.prop = value
