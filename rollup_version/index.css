@@ -1,0 +1,11 @@
+body {
+    background: grey;
+    color: bisque;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-img {
+    width: 400px;
+    height: 400px;
+}
