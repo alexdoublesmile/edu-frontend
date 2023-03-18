@@ -8,6 +8,17 @@
   <title>Работа с DOM</title>
 </head>
 <body>
+  <div class="main-navigation">
+    <a class="main-navigation__button-item" href="#tasks_today" data-button-id="1">
+      Today tasks
+    </a>
+    <a class="main-navigation__button-item" href="#tasks_week" data-button-id="2">
+      Week tasks
+    </a>
+    <a class="main-navigation__button-item" href="#tasks_later" data-button-id="3">
+      Later tasks
+    </a>
+  </div>
   <div id="tasks">
     <div class="tasks__wrapper">
       <form class="create-task-block">
@@ -25,7 +36,9 @@
           Создать
         </button>
       </form>
-      <div class="tasks-list"></div>
+      <div class="tasks-list">
+        
+      </div>
     </div>
   </div>
 
