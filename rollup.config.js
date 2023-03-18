@@ -1,4 +1,5 @@
 import { babel } from "@rollup/plugin-babel";
+import styles from "rollup-plugin-styles";
 
 export default {
     input: "./index.js",
@@ -7,6 +8,7 @@ export default {
         format: "iife"
     },
     plugins: [
-        babel({ babelHelpers: "bundled" })
+        babel({ babelHelpers: "bundled" }),
+        styles()
     ]
 };
