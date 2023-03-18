@@ -11,11 +11,17 @@
     "type": "git",
     "url": "git+https://github.com/alexdoublesmile/-edu-front.git"
   },
-  "keywords": ["webpack", "rollup"],
+  "keywords": [
+    "webpack",
+    "rollup"
+  ],
   "author": "Alex Joyful",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alexdoublesmile/-edu-front/issues"
   },
-  "homepage": "https://github.com/alexdoublesmile/-edu-front#readme"
+  "homepage": "https://github.com/alexdoublesmile/-edu-front#readme",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3"
+  }
 }
