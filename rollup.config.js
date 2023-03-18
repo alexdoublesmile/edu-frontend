@@ -2,7 +2,7 @@ import { babel } from "@rollup/plugin-babel";
 import styles from "rollup-plugin-styles";
 
 export default {
-    input: "./index.js",
+    input: "./src/index.js",
     output: {
         file: "./build/bundle.js",
         format: "iife"
