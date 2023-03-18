@@ -46,3 +46,28 @@ navButtons.forEach(button => button.addEventListener("click", event => {
     const target = event.target;
     target.classList.add("main-navigation__button-item_selected");
 }));
+
+const createForm = document.querySelector(".create-task-block");
+createForm.addEventListener("submit", event => {
+    console.log(event);
+    event.preventDefault();
+    
+    const target = event.target;
+    const taskName = target.taskName.value;
+    console.log(taskName);
+});
+
+// const createForm = document.querySelector(".create-task-block");
+document.addEventListener("keydown", event => {
+    const key = event.key;
+    // console.log(event);
+    console.log(key);
+    
+    const task = document.querySelector(`[data-task-id="${key}"]`);
+    if (task) {
+        const deleteConfirmed = confirm(`Do you really want to remove task ${key}?`)
+        if (deleteConfirmed) {
+            task.remove();
+        }
+    }
+});
