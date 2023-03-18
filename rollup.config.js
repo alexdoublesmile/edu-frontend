@@ -11,6 +11,6 @@ export default {
     plugins: [
         babel({ babelHelpers: "bundled" }),
         styles(),
-        image({ limit: 10000 })
+        image({ limit: 1000000 })
     ]
 };
