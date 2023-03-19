@@ -2,7 +2,7 @@ import {
     getTimeString,
     getTimeDiff
 } from "../core/utils/date";
-import { JS_CREATION_DATE } from "../core/constants/date-constants"
+import { JS_CREATION_DATE } from "../core/constants/dates"
 
 export class TimerBlock {
     #timerContainer
