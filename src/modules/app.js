@@ -1,9 +1,9 @@
 import { JSBlock } from "./js-block";
 
-export class App {
+export default class App {
     #jsBlock
 
-    container() {
+    constructor() {
         this.#jsBlock = new JSBlock();
     }
 

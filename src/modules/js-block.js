@@ -14,14 +14,14 @@ export class JSBlock {
         mainTitle.textContent = "JavaScript";
         
         const mainImage = document.createElement("img");
-        mainTitle.classList.add("main-image");
-        mainTitle.src = JS_IMG;
+        mainImage.classList.add("main-image");
+        mainImage.src = JS_IMG;
         
         const foundedText = document.createElement("p");
-        mainTitle.classList.add("founded-text");
-        mainTitle.textContent = "From JavaScript creation date passed:";
+        foundedText.classList.add("founded-text");
+        foundedText.textContent = "From JavaScript creation date passed:";
 
-        this.#container.append(mainTitle, JSImageHTML, foundedText);
+        this.#container.append(mainTitle, mainImage, foundedText);
 
         return this.#container;
     }
