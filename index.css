@@ -4,6 +4,7 @@
     --default-text-color: #ffffff;
     --donate-item-text-color: #000000;
     --default-border-color: #ffffff;
+    --js-image-size: 400px;
 }
 
 body {
@@ -29,6 +30,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.js-image {
+    width: var(--js-image-size);
+    height: var(--js-image-size);
 }
 
 
