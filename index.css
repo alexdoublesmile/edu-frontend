@@ -58,6 +58,18 @@ body {
     line-height: 2.5 rem;
 }
 
+.timer-text {
+    color: var(--text-color);
+    font-size: 2 rem;
+    line-height: 2.5 rem;
+}
+
+.today-date {
+    color: var(--text-color);
+    font-size: 2 rem;
+    line-height: 2.5 rem;
+}
+
 
 .donates-container {
     display: flex;
