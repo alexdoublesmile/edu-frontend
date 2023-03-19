@@ -1,11 +1,11 @@
 import JS_IMG from "../../assets/logo.jpg";
 
 export class JSBlock {
-    
+    #container
 
     constructor() {
-        this.container = document.createElement("div");
-        this.container.classList.add("js_block");
+        this.#container = document.createElement("div");
+        this.#container.classList.add("js_block");
     }
 
     render() {
@@ -21,6 +21,6 @@ export class JSBlock {
         mainTitle.classList.add("founded-text");
         mainTitle.textContent = "From JavaScript creation date passed:";
 
-        this.container.append(mainTitle, JSImageHTML, foundedText);
+        this.#container.append(mainTitle, JSImageHTML, foundedText);
     }
 }
