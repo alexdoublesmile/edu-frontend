@@ -25,6 +25,13 @@ body {
     box-sizing: border-box;
 }
 
+.js-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .donates-container {
     display: flex;
     flex-direction: column;
