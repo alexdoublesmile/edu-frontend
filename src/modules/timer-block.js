@@ -24,7 +24,14 @@ export class TimerBlock {
         todayDateHTML.textContent = `Today is ${todayDate}`;
 
         this.#timerContainer.append(this.#timerTextHTML, todayDateHTML);
+        this.#enableTimeUpdate();
 
         return this.#timerContainer;
+    }
+
+    #enableTimeUpdate() {
+        setInterval(() => {
+            this.#timerTextHTML.textContent = getTimeDiff(new Date(), JS_CREATION_DATE);
+        }, 1000);
     }
 }
