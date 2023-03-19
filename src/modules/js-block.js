@@ -5,7 +5,7 @@ export class JSBlock {
 
     constructor() {
         this.#container = document.createElement("div");
-        this.#container.classList.add("js_block");
+        this.#container.classList.add("js-block");
     }
 
     render() {
