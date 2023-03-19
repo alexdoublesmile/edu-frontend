@@ -1,29 +1,37 @@
 :root {
-    --main-background: #4666B1;
+    /* --main-background: #4666B1;
     --primary-color: #4666B1;
     --default-text-color: #ffffff;
     --donate-item-text-color: #000000;
-    --default-border-color: #ffffff;
-    --js-image-size: 400px;
+    --default-border-color: #ffffff; */
+    --main-background: #86898f;
+    --text-color: #f1f1f1;
+    --js-image-size: 200px;
+}
+
+h2 {
+    margin: 0;
 }
 
 body {
     padding: 0;
     margin: 0;
+    background: var(--main-background);
     min-height: 100vh;
-    max-height: 100vh;
     height: 100vh;
+    /* max-height: 100vh; */
 
     display: flex;
-    justify-content: space-evenly;
-    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--default-text-color);
+
+    /* justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 20px;
     overflow: hidden;
-
-    color: var(--default-text-color);
-    background: var(--main-background);
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 
 .js-block {
@@ -35,6 +43,19 @@ body {
 .js-image {
     width: var(--js-image-size);
     height: var(--js-image-size);
+}
+
+.main-title {
+    color: var(--text-color);
+    font-size: 5rem;
+    line-height: 5.5rem;
+    margin-bottom: 10px;
+}
+
+.founded-text {
+    color: var(--text-color);
+    font-size: 2 rem;
+    line-height: 2.5 rem;
 }
 
 
