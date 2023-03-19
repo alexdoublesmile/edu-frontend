@@ -2,15 +2,13 @@ import {
     getTimeString,
     getTimeDiff
 } from "../core/utils/date";
-import JS_CREATION_DATE from "../core/constants/date-constants"
+import { JS_CREATION_DATE } from "../core/constants/date-constants"
 
 export class TimerBlock {
-    #date
     #timerContainer
     #timerTextHTML
 
-    constructor(date) {
-        this.#date = date;
+    constructor() {
         this.#timerContainer = document.createElement("div");
         this.#timerTextHTML = document.createElement("h2");
     }
@@ -18,13 +16,12 @@ export class TimerBlock {
     render() {
         this.#timerContainer.id = "timer";
         this.#timerContainer.classList.add("timer-text");
-
-        this.#timerTextHTML.textContent = getTimeDiff(
-            getTimeString(new Date()), getTimeString(JS_CREATION_DATE));
+        this.#timerTextHTML.textContent = getTimeDiff(new Date(), JS_CREATION_DATE);
 
         const todayDateHTML = document.createElement("div");
         todayDateHTML.classList.add("today-date");
-        todayDateHTML.textContent = new Date();
+        const todayDate = getTimeString(new Date());
+        todayDateHTML.textContent = `Today is ${todayDate}`;
 
         this.#timerContainer.append(this.#timerTextHTML, todayDateHTML);
 
