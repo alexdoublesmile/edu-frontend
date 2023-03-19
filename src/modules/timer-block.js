@@ -1,3 +1,9 @@
+import {
+    getTimeString,
+    getTimeDiff
+} from "../core/utils/date";
+import JS_CREATION_DATE from "../core/constants/date-constants"
+
 export class TimerBlock {
     #date
     #timerContainer
@@ -13,7 +19,8 @@ export class TimerBlock {
         this.#timerContainer.id = "timer";
         this.#timerContainer.classList.add("timer-text");
 
-        this.#timerTextHTML.textContent = "TIME";
+        this.#timerTextHTML.textContent = getTimeDiff(
+            getTimeString(new Date()), getTimeString(JS_CREATION_DATE));
 
         const todayDateHTML = document.createElement("div");
         todayDateHTML.classList.add("today-date");
