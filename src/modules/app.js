@@ -1,5 +1,15 @@
+import { BlockList } from "net"
+import { JSBlock } from "./js-block"
+
 export class App {
+    #jsBlock
+
+    container() {
+        this.#jsBlock = new JSBlock();
+    }
+
     run() {
-        document.body.textContent = "Hello fro Frontend!"
+        const jsBlockHTML = this.#jsBlock.render();
+        document.body.append(jsBlockHTML);
     }
 }
