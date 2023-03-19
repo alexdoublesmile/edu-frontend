@@ -1,5 +1,4 @@
-import { BlockList } from "net"
-import { JSBlock } from "./js-block"
+import { JSBlock } from "./js-block";
 
 export class App {
     #jsBlock

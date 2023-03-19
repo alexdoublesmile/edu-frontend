@@ -22,5 +22,7 @@ export class JSBlock {
         mainTitle.textContent = "From JavaScript creation date passed:";
 
         this.#container.append(mainTitle, JSImageHTML, foundedText);
+
+        return this.#container;
     }
 }
