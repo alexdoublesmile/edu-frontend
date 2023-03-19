@@ -1,4 +1,4 @@
-export class Timer {
+export class TimerBlock {
     #date
     #timerContainer
     #timerTextHTML
