@@ -1,10 +1,13 @@
+### Meta ###
 HELP.md
+
+### Build ###
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-node_modules
-dist
+node_modules/
+dist/
 
 ### STS ###
 .apt_generated
