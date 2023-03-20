@@ -20,6 +20,7 @@ export class TimerBlock {
 
         const todayDateHTML = document.createElement("div");
         todayDateHTML.classList.add("today-date");
+        
         const todayDate = getTimeString(new Date());
         todayDateHTML.textContent = `Today is ${todayDate}`;
 

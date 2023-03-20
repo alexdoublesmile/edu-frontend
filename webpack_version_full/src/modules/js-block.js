@@ -1,4 +1,4 @@
-import JS_IMG from "../../assets/logo.jpg";
+import JS_IMG_PATH from "../../assets/logo.jpg";
 
 export class JSBlock {
     #container
@@ -15,7 +15,7 @@ export class JSBlock {
         
         const mainImage = document.createElement("img");
         mainImage.classList.add("main-image");
-        mainImage.src = JS_IMG;
+        mainImage.src = JS_IMG_PATH;
         
         const foundedText = document.createElement("p");
         foundedText.classList.add("founded-text");
