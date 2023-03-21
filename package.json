@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/alexdoublesmile/-edu-front/issues"
   },
-  "homepage": "https://github.com/alexdoublesmile/-edu-front#readme"
+  "homepage": "https://github.com/alexdoublesmile/-edu-front#readme",
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
 }
