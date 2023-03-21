@@ -7,9 +7,9 @@ interface MyPositionWithDefault extends MyPosition {
     default: string
 }
 
-// function position(): MyPosition
-// function position(a: number): MyPositionWithDefault
-// function position(a: number, b: number): MyPosition
+function position(): MyPosition
+function position(a: number): MyPositionWithDefault
+function position(a: number, b: number): MyPosition
 
 function position(a?: number, b?: number) {
     if (!a && !b) {
@@ -22,7 +22,7 @@ function position(a?: number, b?: number) {
         return {
             x: a,
             y: undefined,
-            default: a.toString()
+            default: a.toString()        
         }
     }
     return {
