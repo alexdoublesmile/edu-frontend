@@ -9,3 +9,4 @@ const membershipReverse = Membership[0];
 console.log(membership);
 console.log(membershipReverse);
 console.log(Membership.Premium);
+
