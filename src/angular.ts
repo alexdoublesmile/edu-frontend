@@ -24,8 +24,8 @@ function Component(config: ComponentDecorator) {
     selector: "#card",
     template: `
         <div class="card">
-            <div class="card-title">
-                <div class="card-details">
+            <div class="card-content">
+                <div class="card-title">
                     Card Coponent
                 </div>
             </div>
